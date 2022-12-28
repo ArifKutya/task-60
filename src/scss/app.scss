@@ -1,5 +1,4 @@
 @charset "utf-8";
-@import "~bulma/bulma";
 
 /* Core variables */
 @import "base/vars";
@@ -12,7 +11,7 @@
 
 /* Mixins, helpers and functions */
 @import "base/mixins";
-
+$background: white;
 html {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -26,4 +25,14 @@ html {
   justify-content: center;
   font-size: 10rem;
   flex-flow: column;
+}
+@media screen and (max-width: 600px){
+  .navbar-menu{
+    display: none;
+  }
+}
+@media screen and (min-width: 600px){
+  .navbar-burger{
+    display: none;
+  }
 }
